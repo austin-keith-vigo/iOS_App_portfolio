@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         self.initViews()
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -28,6 +29,7 @@ class HomeViewController: UIViewController {
             self.getData()
         }
     }
+    
 
     func initViews() {
         self.initNavigation()
@@ -42,9 +44,11 @@ class HomeViewController: UIViewController {
         self.view.backgroundColor = .clear
     }
     
+    
     func initNavigation() {
         self.navigationController?.isNavigationBarHidden = true
     }
+    
     
     func getData() {
         
